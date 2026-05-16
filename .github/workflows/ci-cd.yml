@@ -10,13 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # - name: Simple run outout
-      #   run: echo "Hello world!"
-
-      - name: Installing dependencies
-        run: sudo apt install docker-compose-v2
-
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Docker
+        uses: docker/setup-docker-action@v4
       - name: Printing information
         run: docker compose version
       - name: Build docker container
-        run: sudo docker compose up -d
+        run: docker compose up -d
