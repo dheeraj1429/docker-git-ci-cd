@@ -1,0 +1,14 @@
+name: CI CD PIPELINE
+
+on:
+    push:
+        branches: 
+            - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Simple run outout
+        run: echo "Hello world!"
