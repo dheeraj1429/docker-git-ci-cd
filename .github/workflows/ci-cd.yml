@@ -14,4 +14,4 @@ jobs:
       #   run: echo "Hello world!"
 
       - name: Build docker container
-        run: docker
+        run: docker-compose up -d
