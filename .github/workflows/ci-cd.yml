@@ -19,4 +19,4 @@ jobs:
       - name: Printing information
         run: docker compose version
       - name: Build docker container
-        run: docker compose up -f ./docker-compose.yaml -d
+        run: sudo docker compose up -d
