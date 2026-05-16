@@ -13,5 +13,10 @@ jobs:
       # - name: Simple run outout
       #   run: echo "Hello world!"
 
+      - name: Installing dependencies
+        run: sudo apt install docker-compose-v2
+
+      - name: Printing information
+        run: docker compose version
       - name: Build docker container
-        run: docker-compose up -d
+        run: docker compose up -d
