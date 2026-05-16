@@ -10,5 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Simple run outout
-        run: echo "Hello world!"
+      # - name: Simple run outout
+      #   run: echo "Hello world!"
+
+      - name: Build docker container
+        run: docker
