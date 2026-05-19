@@ -22,5 +22,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: dheeraj1429/docker-git-cicd:latest,dheeraj1429/docker-git-cicd:${{ github.sha }}
+          tags: dheeraj1429/docker-git-cicd:0.1
           target: development

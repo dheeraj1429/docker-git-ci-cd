@@ -1,4 +1,5 @@
 require("dotenv").config();
+require("dotenv").config();
 const fastify = require("fastify")({ logger: true });
 
 fastify.get("/", (request, reply) => {
