@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ci-cd-deployment
+  labels:
+    app: ci-cd
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: ci-cd
+  
+  template:
+    metadata:
+      labels:
+        app: ci-cd
+    spec:
+      containers:
+        - name: ci-cd-container
+          image: dheeraj1429/docker-git-cicd:0.1
+          ports:
+            - containerPort: 3000
+      restartPolicy: Always
